@@ -4,11 +4,13 @@ using namespace std;
 
 
 void lower(char tekst[]){
-// funkcja zamienia duże na małe
-    // Użyj pętli  do odczytywania kolejnych znków
-    // Sprawdź  kod ASCII znaku
-    // jeżeli kod odpowiada dużej literze zamień go
-
+    if( isupper( tekst) )
+	{
+		t1 = tolower( tekst );
+		cout << t1 << endl;
+	else
+		cout << tekst << endl;
+}
 
 void szyfruj(char tekst[], int klucz) {
     int i = 0; // infeks
@@ -35,5 +37,6 @@ int main(int argc, char **argv){
     cout << "Podaj klucz: " << endl;
     cin >> klucz;
     szyfruj(tekst, klucz);
+    lower(tekst);
     return 0;
 }
