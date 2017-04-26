@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1493185584 source:/home/kl2ag2/gitrep2/gitrepo/kody/cpp/sfml/Pong/game.cpp
+	"game.hpp"
+
+1493184809 /home/kl2ag2/gitrep2/gitrepo/kody/cpp/sfml/Pong/game.hpp
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<cmath>
+	"paletka.hpp"
+	"pong.hpp"
+
+1493098843 source:/home/kl2ag2/gitrep2/gitrepo/kody/cpp/sfml/Pong/main.cpp
+	"game.hpp"
+
+1493184899 /home/kl2ag2/gitrep2/gitrepo/kody/cpp/sfml/Pong/paletka.hpp
+	<SFML/Graphics.hpp>
+	<cmath>
+
+1493185551 source:/home/kl2ag2/gitrep2/gitrepo/kody/cpp/sfml/Pong/paletka.cpp
+	"paletka.hpp"
+
+1493185233 /home/kl2ag2/gitrep2/gitrepo/kody/cpp/sfml/Pong/pong.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<cstdlib>
+	<cmath>
+	<ctime>
+
+1493185010 source:/home/kl2ag2/gitrep2/gitrepo/kody/cpp/sfml/Pong/pong.cpp
+	"pong.hpp"
+
