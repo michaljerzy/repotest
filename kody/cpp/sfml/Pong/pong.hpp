@@ -8,8 +8,8 @@ class Pilka
 {
 private:
     sf::CircleShape pilka;
-    sf::SoundBuffer buffer;
-    sf::Sound zderzenie;
+    //sf::SoundBuffer buffer;
+    //sf::Sound zderzenie;
     sf::Vector2f srodek;
 
     float r, V, kat;
@@ -30,6 +30,6 @@ public:
     void restart();
     void Punkt(sf::RectangleShape  paletkaGracza, sf::RectangleShape  paletkaWroga);
 
-    bool czyKolizja(sf::RectangleShape & paletka);
+    bool czyKolizja(sf::RectangleShape  paletka);
 
 };

@@ -13,12 +13,14 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="/home/michal/Dokumenty/SFML-2.4.2/include" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics" />
 					<Add library="sfml-window" />
 					<Add library="sfml-system" />
 					<Add library="sfml-audio" />
+					<Add directory="/home/michal/Dokumenty/SFML-2.4.2/lib" />
 				</Linker>
 			</Target>
 			<Target title="Release">

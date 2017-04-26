@@ -98,7 +98,7 @@ void Pilka::restart()
 
 }
 
-bool Pilka::czyKolizja(sf::RectangleShape & pal)
+bool Pilka::czyKolizja(sf::RectangleShape  pal)
 {
 	return (pal.getGlobalBounds().intersects(pilka.getGlobalBounds()));
 }
