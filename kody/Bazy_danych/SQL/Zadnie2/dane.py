@@ -13,11 +13,28 @@ def dane_z_pliku(plik):
             dane.append(rekord)
     return dane
 
+def wyczysc_dane(dane, pole):
+    for i, rekord in enumerate(dane):
+        element = rekord[pole]
+        element = element.replace(" ", "")
+        element = element.replace(",", ".")
+        element = element.replace("zł", "")
+        rekord[pole] = element
+        dane[i] = rekord
+    return dane
+    
 def main(args):
     premia = dane_z_pliku('premia.txt')
+    premia = wyczysc_dane(premia, 1)
+    pracownicy = dane_z_pliku('pracownicy.txt')
+    pracownicy = wyczysc_dane(pracownicy,5)
+    
+    dzial = dane_z_pliku('dział.txt')
+    
     print(premia)
+    print(pracownicy)
     return 0
 
 if __name__ == '__main__':
     import sys
-sys.exit(main(sys.argv))
+    sys.exit(main(sys.argv))
