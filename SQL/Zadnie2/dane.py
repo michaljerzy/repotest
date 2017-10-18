@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+4#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 #  dane.py
