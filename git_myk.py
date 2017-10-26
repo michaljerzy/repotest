@@ -11,8 +11,8 @@ def main(args):
     log = os.system('git commit -m .')
     if log != 256:
         os.system('git push')
+        print('\n')
     os.system( 'git status')
-
     return 0
 
 if __name__ == '__main__':
