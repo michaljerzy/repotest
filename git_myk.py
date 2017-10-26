@@ -5,8 +5,10 @@ def f(a, b):
     return (a + b)
 
 def main(args):
-    adr = '/home/kl3ag2/github/Informatyka/'
+    #adr = '/home/kl3ag2/github/Informatyka/'
     #os.system(f('cd %s', adr))
+    os.system( 'git status')
+    print('\n')
     os.system('git add .')
     log = os.system('git commit -m .')
     if log != 256:
