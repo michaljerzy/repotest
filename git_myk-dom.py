@@ -15,6 +15,7 @@ def main(args):
         os.system('git push')
         print('\n')
     os.system( 'git status')
+    os.system( 'git pull' )
     return 0
 
 if __name__ == '__main__':
