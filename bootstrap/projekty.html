@@ -29,7 +29,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-          <h2>Projekt jakiś tam</h2>
+          <h2>HTML + FORMS + JS +</h2>
         </div>
        </div>
       </div>
@@ -50,47 +50,32 @@
             </ul>
           </div>
           <div class="col-md-8">
-            <p><img class="float-left rounded mt-2 mr-3" width="300" src="gory1.jpg" alt="Góry1">
-              Lorem <span class="text-capitalize">ipsum</span> dolor sit amet, <span class="font-weight-bold">consectetur</span> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p><img class="float-right rounded-circle mr-3" width="400" src="gory2.jpg" alt="Góry1"> <span class="font-italic">Lorem ipsum dolor sit amet,consectetur</span> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<span class="text-info">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</span> . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="form-group">
+              <label for="liczba1">Liczba 1</label>
+              <input type="text" class="form-control" id="liczba1" placeholder="">
+              <p class="help-block">Wpisz liczbę.</p>
+            </div>
+            <div class="form-group">
+              <label for="liczba2">Liczba 2</label>
+              <input type="text" class="form-control" id="liczba2" placeholder="">
+              <p class="help-block">Wpisz liczbę.</p>
+            </div>
+
+
+            <div class="card">
+              <div class="card-body">
+                <p id="wynik">Wynik</p>
+
+              </div>
+
+            </div>
+
+            <button type="button" name="button" class="btn btn-dark" onclick="dodaj();">Dodaj</button>
+            <button type="button" name="button" class="btn btn-dark" onclick="odejmij();">Odejmij</button>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-            <a href="gory3.jpg" class="h-50">
-              <img class="img-thumbnail" src="gory3.jpg" alt="">
-            </a>
-
-        </div>
-        <div class="col-md-3">
-            <a href="#" class="h-50">
-              <img class="img-thumbnail" src="gory2.jpg" alt="">
-            </a>
-
-
-        </div>
-        <div class="col-md-3">
-            <a href="#" class="h-50">
-              <img class="img-thumbnail" src="gory1.jpg" alt="">
-            </a>
-
-        </div>
-        <div class="col-md-3">
-            <a href="#" class="h-50">
-              <img class="img-thumbnail" src="gory3.jpg" alt="">
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -100,5 +85,23 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    function dodaj() {
+      var liczba1 = parseInt(document.getElementById('liczba1').value);
+      var liczba2 = parseInt(document.getElementById('liczba2').value);
+      //alert("Suma: " + (liczba1 + liczba2));
+      document.getElementById("Wynik").innerHTML = liczba1 + liczba2;
+}
+    function odejmij() {
+
+      var liczba1 = parseInt(document.getElementById('liczba1').value);
+      var liczba2 = parseInt(document.getElementById('liczba2').value);
+      //alert("Różnica: " + (liczba1 - liczba2));
+      document.getElementById("Wynik").innerHTML = liczba1 + liczba2;
+}
+
+    </script>
+
   </body>
 </html>
