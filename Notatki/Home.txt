@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-17T12:52:19+01:00
+
+**Programowanie obiektowe:**
+Klasa(szablon obiektu)- Szablon opisujący obiekt, schemat obiektu, **wspólne**
+Obiekt- instancja klasy (egzemplarz) 
+
+**Klasa to nowy typ danych!!!**
+
+**Konstruktor inicjuje właściwości klasy**
