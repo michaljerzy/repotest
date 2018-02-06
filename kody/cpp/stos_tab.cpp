@@ -6,7 +6,6 @@ bool czy_pusty(int sp, int sr) {
     if (sp < sr) return true;
     return false;
     }
-
 void push(int *stos, int &sp, int sr, int dane) {
     
     cout << dane << " "; //informacyjny wydruk wartości 
