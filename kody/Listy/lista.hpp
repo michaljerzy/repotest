@@ -4,6 +4,7 @@
 struct ELEMENT {
     int wartosc;
     ELEMENT *nastepny;
+    ELEMENT *wskaznik;
 };
 
 class Lista {

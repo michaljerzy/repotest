@@ -1,0 +1,12 @@
+*.o
+*.out
+*.exe
+*.lck
+.~*
+
+__pycache__/
+*.py[cod]
+venv
+pve
+
+.DS_Store
